@@ -13,7 +13,7 @@ class StudentsController < ActionController::Base
 
   def update
     @student= Student.find(params[:id])
-    student.uptade(params[:student])
+    @student.update(params[:student])
     redirect_to student
   end
 
