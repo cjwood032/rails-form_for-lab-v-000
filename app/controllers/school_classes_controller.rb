@@ -12,9 +12,9 @@ class SchoolClassesController < ActionController::Base
   end
 
   def update
-    school_class = SchoolClass.find(params[:id])
-    school_class.update(params[:school_class])
-    redirect_to school_class
+    @school_class = SchoolClass.find(params[:id])
+    @school_class.update(params[:school_class])
+    redirect_to @school_class
   end
 
   def show
