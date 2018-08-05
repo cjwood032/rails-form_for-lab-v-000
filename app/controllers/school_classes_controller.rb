@@ -13,5 +13,5 @@ class SchoolClassesController < ActionController::Base
 
   def show
   end
-  
+
 end
