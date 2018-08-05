@@ -12,6 +12,7 @@ class StudentsController < ActionController::Base
   end
 
   def show
+    @student= Student.find(params[:id])
   end
   
 end
