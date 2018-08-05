@@ -1,0 +1,1 @@
+class SchoolClassesController < ActionController::Base
