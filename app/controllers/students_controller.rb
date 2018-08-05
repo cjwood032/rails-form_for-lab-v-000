@@ -14,7 +14,7 @@ class StudentsController < ActionController::Base
   def update
     @student= Student.find(params[:id])
     @student.update(params[:student])
-    redirect_to student
+    redirect_to @student
   end
 
   def show
